@@ -15,17 +15,15 @@ componentDidMount(){
     .then(result => this.setState({user: result}))
 }
 
-
-nathanFetch1 = (nathan) => {
-  this.setState(nathan)
-}
-
   render() {
     return (
-      <div className="App">
+      <main className="App">
+        <div>
+          
+        </div>
         <h1>🖱️Clicky Clacky Tracker⌨️</h1>
         <UserInfo user={this.state.user} />
-      </div>
+      </main>
     );
   }
 }
