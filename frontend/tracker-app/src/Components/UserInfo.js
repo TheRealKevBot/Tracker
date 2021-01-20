@@ -7,10 +7,17 @@ export default function UserInfo(props) {
 
     return (
         <div>
-            <h2>Username: {props.user.AccountName}</h2> 
-            <h3> Clickies: {props.user.Clicks}</h3>
-            <h4> Clackies: {props.user.Keys}</h4>
-            <h5> Up Time: {props.user.UptimeLong}</h5>
+            <ul>
+                <li>Username: {props.user.AccountName}</li>
+                <li>Up Time: {props.user.UptimeLong}</li>
+                <li>Clickies: {props.user.Clicks}</li>
+                <li>Clackies: {props.user.Keys}</li>
+                <li>Download: {props.user.Download}</li>
+                <li>Upload: {props.user.Upload}</li>
+                <li> Average Clickies: {props.user.AvClicksPerPulse}</li>
+                <li>Average Clackies Per Pulse: {props.user.AvKeysPerPulse}</li>
+                
+            </ul>
         </div>
     )
 }
